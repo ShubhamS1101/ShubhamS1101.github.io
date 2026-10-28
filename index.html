@@ -942,6 +942,7 @@
       <div class="nav-right">
         <ul class="nav-links" id="navLinks">
           <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -983,12 +984,6 @@
               I'm <strong>Shubham Singhal</strong>, an <strong>EEE undergraduate at IIT Guwahati</strong>
               with a minor in <strong>CSE</strong>. I like building cool stuff across <strong>electronics, AI/ML, and software</strong>. I've worked in all three areas and honestly enjoy all of them, which is also why I'm still figuring out what I want to pursue long-term. Right now, I just want to keep learning and building interesting things.
             </p>
-            <p>
-              This summer, I'll be joining <strong>Adobe as a Product Intern</strong>. I'm not sure yet what I'll be working on, but I'm excited to work on something meaningful and challenging.
-            </p>
-            <p>
-              Currently, I'm working under <strong>Prof. Prithvijeet Guha</strong> on building a car with a <strong>pan-tilt head</strong> that tracks objects using <strong>AI algorithms and PID control</strong>. It's been a great way to combine vision, control systems, and hardware into one project.
-            </p>
           </div>
           <div class="about-stats">
             <div class="stat">
@@ -1000,14 +995,25 @@
               <div class="stat-label">Minor</div>
             </div>
             <div class="stat">
-              <div class="stat-number">Adobe</div>
-              <div class="stat-label">Incoming Intern</div>
-            </div>
-            <div class="stat">
               <div class="stat-number">IIT-G</div>
               <div class="stat-label">University</div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="projects-layout">
+        <nav class="projects-nav" aria-label="Experience">
+          <button type="button" class="active" aria-controls="exp-adobe">Adobe</button>
+        </nav>
+        <div class="projects-detail">
+          <div class="project-panel active" id="exp-adobe"></div>
         </div>
       </div>
     </div>
@@ -1212,6 +1218,7 @@
   <!-- Scroll to Top -->
   <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 
+  <script src="content/experience/Adobe/experience.js"></script>
   <script>
     /* ── Theme Toggle ── */
     const html = document.documentElement;
@@ -1263,7 +1270,7 @@
     /* ── Project Tabs ── */
     const projNav = document.getElementById('projectsNav');
     const projBtns = projNav.querySelectorAll('button');
-    const projPanels = document.querySelectorAll('.project-panel');
+    const projPanels = document.querySelectorAll('#projects .project-panel');
 
     projBtns.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -1330,7 +1337,7 @@
     })();
   </script>
 
-  <script src="http://192.169.0.75:8000/static/widget.js" data-api-key="epa_099d9f4abc0a3e4f8aa76954568da511e4119a49c84ff77b"></script>
+  <script src="http://192.168.0.75:8000/static/widget.js" data-api-key="epa_099d9f4abc0a3e4f8aa76954568da511e4119a49c84ff77b"></script>
 
 </body>
 </html>
